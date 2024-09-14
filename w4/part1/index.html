@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thingy</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        let quantity = prompt("Please enter a number for Quantity:");
+        let percentage = prompt("Please enter a percentage amount:");
+        let result = (percentage / 100) * quantity;
+        document.getElementById("output").innerText += `${percentage}% of ${quantity} is ${result}`;
+    </script>
+</body>
+</html>

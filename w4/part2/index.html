@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thingy</title>
+</head>
+<body>
+
+    <script>
+        let grade = parseInt(prompt("Enter a grade between 1 and 100:"), 10);
+
+        let letterGradeIf;
+        if (grade >= 91 && grade <= 100) {
+            letterGradeIf = 'A';
+        } else if (grade >= 81 & grade <= 90) {
+            letterGradeIf = 'B';
+        } else if (grade >= 71 & grade <= 80) {
+            letterGradeIf = 'C';
+        } else if (grade >= 61 & grade <= 70) {
+            letterGradeIf = 'D';
+        } else if (grade >= 0 & grade <= 60) {
+            letterGradeIf = 'F';
+        } else {
+            letterGradeIf = 'Invalid grade';
+        }
+
+        document.write(`Your grade is a(n) ${letterGradeIf}<br>`);
+
+        
+    </script>
+</body>
+</html>

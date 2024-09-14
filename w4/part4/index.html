@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thingy</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        let professor = prompt("Please enter the punishing professor's name:");
+        let lineToWrite = prompt("Please enter the line to be written:");
+        let numberOfTimes = parseInt(prompt("Please enter the number of times the line should be written:"), 10);
+        
+        if (isNaN(numberOfTimes) || numberOfTimes <= 0) {
+            document.getElementById("output").innerText = "Invalid number of times. Please enter a positive number.";
+        } else {
+            let outputDiv = document.getElementById("output");
+            let x = 1;
+            while (x <= numberOfTimes) {
+                outputDiv.innerHTML += `${x}: ${lineToWrite}<br>`;
+                x++;
+            }
+        }
+    </script>
+</body>
+</html>
